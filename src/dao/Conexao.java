@@ -8,7 +8,7 @@ public class Conexao {
     public Connection getConexao(){
         
         try{
-            return DriverManager.getConnection("jdbc:mysql://localhost/projeto_ianes","root","Gabriel1207");
+            return DriverManager.getConnection("jdbc:mysql://localhost/projeto_ianes","root","password");
         }catch(Exception e){
             throw new RuntimeException("Erro - getConexao: " + e);
         }
